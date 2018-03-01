@@ -74,14 +74,21 @@ class Bot
         this.bot.on('message',
         message =>
             {
-                this.msg_hndler.handle(message);
+                this.msg_hndler.checkNormal(message);
+            }
+        );
+
+        this.bot.on('messageDelete',
+        message =>
+            {
+                this.msg_hndler.handleDelete(message);
             }
         );
 
         this.bot.on('messageUpdate',
         (old_message, new_message) =>
             {
-                this.msg_hndler.handleEdit(old_message, new_message);
+                this.msg_hndler.checkEdit(old_message, new_message);
             }
         );
     }

@@ -1,14 +1,24 @@
 {
     "Version": "2.0.0",
 
+    "Roles":
+    {
+        "Muted": "Muted",
+        "Staff": "admin"
+    },
+
     "Server":
     {
         "Token": "MzkzNTQ3MzA4NDQyMDU4NzYy.DR3XEw.nFYpLlFYucP-M9cjoBBGfS_MbCM",
         "Tick": 50,
+        "LogMessages": true,
+        "Prefix": "-",
 
         "Channels":
         {
-            "Default": "general"
+            "Default": "general",
+            "Moderation": "moderation",
+            "Logging": "logging"
         },
 
         "Admins":
@@ -26,6 +36,11 @@
     {
         "Prompt": ">"
     },
+
+    "ToonTips":
+    [
+        "test tip"
+    ],
 
 	"Blacklist":
     [
